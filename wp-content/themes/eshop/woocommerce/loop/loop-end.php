@@ -19,7 +19,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 				</div>
+			<div class="pagination flex-m flex-w p-t-26">
+				<a href="#" class="item-pagination flex-c-m trans-0-4 active-pagination">1</a>
+				<a href="#" class="item-pagination flex-c-m trans-0-4">2</a>
+			</div>
 			</div>
 		</div>
 	</div>
 </section>
+<!-- Container Selection -->
+	<div id="dropDownSelect1"></div>
+	<div id="dropDownSelect2"></div>

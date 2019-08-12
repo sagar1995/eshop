@@ -33,9 +33,10 @@ $item_col = "col-sm-12 col-md-6 col-lg-4 p-b-50";
 				</a>
 				<div class="block2-btn-addcart w-size1 trans-0-4">
 					<!-- Button -->
-					<a href="<?php do_action( 'woocommerce_shop_loop_item' ); ?>"><button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-						Add To Cart
-					</button></a>
+					<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+					<?php do_action( 'woocommerce_after_shop_loop_item' ); ?>
+					</button>
+					
 				</div>
 			</div>
 			<?php
@@ -72,12 +73,11 @@ $item_col = "col-sm-12 col-md-6 col-lg-4 p-b-50";
 			* @hooked woocommerce_template_loop_add_to_cart - 10
 			*/?>
 		</div>
-		<div class="block2-txt p-t-20">
+		<div class="block2-txt p-t-20" style="text-align: center;">
 			<span class="block2-price m-text6 p-r-5">
-				<?php
-					do_action( 'woocommerce_shop_loop_item_title' );
-					do_action( 'woocommerce_after_shop_loop_item_title' );
-					remove_action('woocommerce_before_shop_loop_item_title','woocommerce_show_product_loop_sale_flash', 10);
+				<a href="<?php the_permalink(); ?>"><?php do_action( 'woocommerce_shop_loop_item_title' ); ?></a>
+				<?php do_action( 'woocommerce_after_shop_loop_item_title' );
+				remove_action('woocommerce_before_shop_loop_item_title','woocommerce_show_product_loop_sale_flash', 10);
 				?>
 			</span>
 		</div>

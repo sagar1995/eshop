@@ -120,7 +120,7 @@
 								<div class="header-cart-buttons">
 									<div class="header-cart-wrapbtn">
 										<!-- Button -->
-										<a href="cart.html" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+										<a href="<?php echo get_site_url(); ?>/cart" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
 											View Cart
 										</a>
 									</div>
@@ -283,4 +283,5 @@
 						</li>
 					</ul>
 				</nav>
-	
+			</div>
+		</header>
