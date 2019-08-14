@@ -1,0 +1,186 @@
+2019-08-14T08:14:51+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 1 passed in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 47 and at least 2 expected in E:\xampp\htdocs\eshop\wp-includes\plugin.php:405
+Stack trace:
+#0 E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php(47): add_action('woocommerce_tem...')
+#1 E:\xampp\htdocs\eshop\wp-includes\template.php(724): require('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\eshop\wp-content\plugins\woocommerce\includes\wc-core-functions.php(195): load_template('E:\\xampp\\htdocs...', false)
+#3 E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\single-product.php(36): wc_get_template_part('content', 'single-product')
+#4 E:\xampp\htdocs\eshop\wp-includes\template-loader.php(78): include('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\eshop\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\eshop\index.php(17): require('E:\\xampp\\htdocs...')
+#7 {main}
+  thr in E:\xampp\htdocs\eshop\wp-includes\plugin.php on line 405
+
+2019-08-14T08:14:57+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 1 passed in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 47 and at least 2 expected in E:\xampp\htdocs\eshop\wp-includes\plugin.php:405
+Stack trace:
+#0 E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php(47): add_action('woocommerce_tem...')
+#1 E:\xampp\htdocs\eshop\wp-includes\template.php(724): require('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\eshop\wp-content\plugins\woocommerce\includes\wc-core-functions.php(195): load_template('E:\\xampp\\htdocs...', false)
+#3 E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\single-product.php(36): wc_get_template_part('content', 'single-product')
+#4 E:\xampp\htdocs\eshop\wp-includes\template-loader.php(78): include('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\eshop\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\eshop\index.php(17): require('E:\\xampp\\htdocs...')
+#7 {main}
+  thr in E:\xampp\htdocs\eshop\wp-includes\plugin.php on line 405
+
+2019-08-14T08:25:45+00:00 CRITICAL Uncaught Error: Call to undefined function do_filter() in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php:47
+Stack trace:
+#0 E:\xampp\htdocs\eshop\wp-includes\template.php(724): require()
+#1 E:\xampp\htdocs\eshop\wp-content\plugins\woocommerce\includes\wc-core-functions.php(195): load_template('E:\\xampp\\htdocs...', false)
+#2 E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\single-product.php(36): wc_get_template_part('content', 'single-product')
+#3 E:\xampp\htdocs\eshop\wp-includes\template-loader.php(78): include('E:\\xampp\\htdocs...')
+#4 E:\xampp\htdocs\eshop\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\eshop\index.php(17): require('E:\\xampp\\htdocs...')
+#6 {main}
+  thrown in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 47
+
+2019-08-14T08:25:51+00:00 CRITICAL Uncaught Error: Call to undefined function do_filter() in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php:47
+Stack trace:
+#0 E:\xampp\htdocs\eshop\wp-includes\template.php(724): require()
+#1 E:\xampp\htdocs\eshop\wp-content\plugins\woocommerce\includes\wc-core-functions.php(195): load_template('E:\\xampp\\htdocs...', false)
+#2 E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\single-product.php(36): wc_get_template_part('content', 'single-product')
+#3 E:\xampp\htdocs\eshop\wp-includes\template-loader.php(78): include('E:\\xampp\\htdocs...')
+#4 E:\xampp\htdocs\eshop\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\eshop\index.php(17): require('E:\\xampp\\htdocs...')
+#6 {main}
+  thrown in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 47
+
+2019-08-14T08:28:35+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 189
+
+2019-08-14T08:28:48+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 189
+
+2019-08-14T08:31:55+00:00 CRITICAL Uncaught Error: Call to undefined function apply_filter() in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php:47
+Stack trace:
+#0 E:\xampp\htdocs\eshop\wp-includes\template.php(724): require()
+#1 E:\xampp\htdocs\eshop\wp-content\plugins\woocommerce\includes\wc-core-functions.php(195): load_template('E:\\xampp\\htdocs...', false)
+#2 E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\single-product.php(36): wc_get_template_part('content', 'single-product')
+#3 E:\xampp\htdocs\eshop\wp-includes\template-loader.php(78): include('E:\\xampp\\htdocs...')
+#4 E:\xampp\htdocs\eshop\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\eshop\index.php(17): require('E:\\xampp\\htdocs...')
+#6 {main}
+  thrown in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 47
+
+2019-08-14T08:46:38+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 1 passed in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 47 and at least 2 expected in E:\xampp\htdocs\eshop\wp-includes\plugin.php:405
+Stack trace:
+#0 E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php(47): add_action('woocommerce_sin...')
+#1 E:\xampp\htdocs\eshop\wp-includes\template.php(724): require('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\eshop\wp-content\plugins\woocommerce\includes\wc-core-functions.php(195): load_template('E:\\xampp\\htdocs...', false)
+#3 E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\single-product.php(36): wc_get_template_part('content', 'single-product')
+#4 E:\xampp\htdocs\eshop\wp-includes\template-loader.php(78): include('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\eshop\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\eshop\index.php(17): require('E:\\xampp\\htdocs...')
+#7 {main}
+  thr in E:\xampp\htdocs\eshop\wp-includes\plugin.php on line 405
+
+2019-08-14T08:46:52+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 1 passed in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 47 and at least 2 expected in E:\xampp\htdocs\eshop\wp-includes\plugin.php:405
+Stack trace:
+#0 E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php(47): add_action('woocommerce_sin...')
+#1 E:\xampp\htdocs\eshop\wp-includes\template.php(724): require('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\eshop\wp-content\plugins\woocommerce\includes\wc-core-functions.php(195): load_template('E:\\xampp\\htdocs...', false)
+#3 E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\single-product.php(36): wc_get_template_part('content', 'single-product')
+#4 E:\xampp\htdocs\eshop\wp-includes\template-loader.php(78): include('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\eshop\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\eshop\index.php(17): require('E:\\xampp\\htdocs...')
+#7 {main}
+  thr in E:\xampp\htdocs\eshop\wp-includes\plugin.php on line 405
+
+2019-08-14T09:00:50+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 193
+
+2019-08-14T09:03:02+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 193
+
+2019-08-14T09:03:40+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 194
+
+2019-08-14T09:13:51+00:00 CRITICAL Uncaught Error: Call to undefined function get_post_the_thumbnail() in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php:36
+Stack trace:
+#0 E:\xampp\htdocs\eshop\wp-includes\template.php(724): require()
+#1 E:\xampp\htdocs\eshop\wp-content\plugins\woocommerce\includes\wc-core-functions.php(195): load_template('E:\\xampp\\htdocs...', false)
+#2 E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\single-product.php(36): wc_get_template_part('content', 'single-product')
+#3 E:\xampp\htdocs\eshop\wp-includes\template-loader.php(78): include('E:\\xampp\\htdocs...')
+#4 E:\xampp\htdocs\eshop\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\eshop\index.php(17): require('E:\\xampp\\htdocs...')
+#6 {main}
+  thrown in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 36
+
+2019-08-14T09:19:37+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 140
+
+2019-08-14T09:20:24+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 140
+
+2019-08-14T09:20:46+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 140
+
+2019-08-14T09:21:25+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 141
+
+2019-08-14T09:24:34+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 27
+
+2019-08-14T09:25:03+00:00 CRITICAL syntax error, unexpected 'print_r' (T_STRING), expecting ',' or ';' in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 27
+
+2019-08-14T09:25:12+00:00 CRITICAL syntax error, unexpected 'print_r' (T_STRING), expecting ',' or ';' in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 27
+
+2019-08-14T09:33:57+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 85
+
+2019-08-14T09:49:03+00:00 CRITICAL Uncaught Error: Call to undefined function get_post_thumbnail() in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php:29
+Stack trace:
+#0 E:\xampp\htdocs\eshop\wp-includes\template.php(724): require()
+#1 E:\xampp\htdocs\eshop\wp-content\plugins\woocommerce\includes\wc-core-functions.php(195): load_template('E:\\xampp\\htdocs...', false)
+#2 E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\single-product.php(36): wc_get_template_part('content', 'single-product')
+#3 E:\xampp\htdocs\eshop\wp-includes\template-loader.php(78): include('E:\\xampp\\htdocs...')
+#4 E:\xampp\htdocs\eshop\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\eshop\index.php(17): require('E:\\xampp\\htdocs...')
+#6 {main}
+  thrown in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 29
+
+2019-08-14T09:50:13+00:00 CRITICAL Uncaught Error: Call to undefined function get_the_post_thumbnail_uri() in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php:29
+Stack trace:
+#0 E:\xampp\htdocs\eshop\wp-includes\template.php(724): require()
+#1 E:\xampp\htdocs\eshop\wp-content\plugins\woocommerce\includes\wc-core-functions.php(195): load_template('E:\\xampp\\htdocs...', false)
+#2 E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\single-product.php(36): wc_get_template_part('content', 'single-product')
+#3 E:\xampp\htdocs\eshop\wp-includes\template-loader.php(78): include('E:\\xampp\\htdocs...')
+#4 E:\xampp\htdocs\eshop\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\eshop\index.php(17): require('E:\\xampp\\htdocs...')
+#6 {main}
+  thrown in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 29
+
+2019-08-14T10:11:49+00:00 CRITICAL Uncaught Error: Call to undefined function get_the_post_thumbnial_url() in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php:47
+Stack trace:
+#0 E:\xampp\htdocs\eshop\wp-includes\template.php(724): require()
+#1 E:\xampp\htdocs\eshop\wp-content\plugins\woocommerce\includes\wc-core-functions.php(195): load_template('E:\\xampp\\htdocs...', false)
+#2 E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\single-product.php(36): wc_get_template_part('content', 'single-product')
+#3 E:\xampp\htdocs\eshop\wp-includes\template-loader.php(78): include('E:\\xampp\\htdocs...')
+#4 E:\xampp\htdocs\eshop\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\eshop\index.php(17): require('E:\\xampp\\htdocs...')
+#6 {main}
+  thrown in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 47
+
+2019-08-14T10:33:24+00:00 CRITICAL Uncaught Error: Call to undefined function get_the_post_thumbnail_uri() in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php:47
+Stack trace:
+#0 E:\xampp\htdocs\eshop\wp-includes\template.php(724): require()
+#1 E:\xampp\htdocs\eshop\wp-content\plugins\woocommerce\includes\wc-core-functions.php(195): load_template('E:\\xampp\\htdocs...', false)
+#2 E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\single-product.php(36): wc_get_template_part('content', 'single-product')
+#3 E:\xampp\htdocs\eshop\wp-includes\template-loader.php(78): include('E:\\xampp\\htdocs...')
+#4 E:\xampp\htdocs\eshop\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\eshop\index.php(17): require('E:\\xampp\\htdocs...')
+#6 {main}
+  thrown in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 47
+
+2019-08-14T10:37:09+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 202
+
+2019-08-14T10:43:51+00:00 CRITICAL Uncaught Error: Call to undefined function get_post_thumbnail_url() in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php:40
+Stack trace:
+#0 E:\xampp\htdocs\eshop\wp-includes\template.php(724): require()
+#1 E:\xampp\htdocs\eshop\wp-content\plugins\woocommerce\includes\wc-core-functions.php(195): load_template('E:\\xampp\\htdocs...', false)
+#2 E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\single-product.php(36): wc_get_template_part('content', 'single-product')
+#3 E:\xampp\htdocs\eshop\wp-includes\template-loader.php(78): include('E:\\xampp\\htdocs...')
+#4 E:\xampp\htdocs\eshop\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\eshop\index.php(17): require('E:\\xampp\\htdocs...')
+#6 {main}
+  thrown in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 40
+
+2019-08-14T10:44:11+00:00 CRITICAL Uncaught Error: Call to undefined function get_post_thumbnail_url() in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php:40
+Stack trace:
+#0 E:\xampp\htdocs\eshop\wp-includes\template.php(724): require()
+#1 E:\xampp\htdocs\eshop\wp-content\plugins\woocommerce\includes\wc-core-functions.php(195): load_template('E:\\xampp\\htdocs...', false)
+#2 E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\single-product.php(36): wc_get_template_part('content', 'single-product')
+#3 E:\xampp\htdocs\eshop\wp-includes\template-loader.php(78): include('E:\\xampp\\htdocs...')
+#4 E:\xampp\htdocs\eshop\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\eshop\index.php(17): require('E:\\xampp\\htdocs...')
+#6 {main}
+  thrown in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-single-product.php on line 40
+

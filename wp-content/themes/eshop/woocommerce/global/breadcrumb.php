@@ -20,27 +20,31 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( ! empty( $breadcrumb ) ) {
+?>
+<div class="bread-crumb bgwhite flex-w p-l-52 p-r-15 p-t-30 p-l-15-sm">
+	<a href="index.html" class="s-text16">
+		<?php
+		if ( ! empty( $breadcrumb ) ) {
 
-	echo $wrap_before;
+			echo $wrap_before;
 
-	foreach ( $breadcrumb as $key => $crumb ) {
+			foreach ( $breadcrumb as $key => $crumb ) {
 
-		echo $before;
+				echo $before;
 
-		if ( ! empty( $crumb[1] ) && sizeof( $breadcrumb ) !== $key + 1 ) {
-			echo '<a href="' . esc_url( $crumb[1] ) . '">' . esc_html( $crumb[0] ) . '</a>';
-		} else {
-			echo esc_html( $crumb[0] );
-		}
+				if ( ! empty( $crumb[1] ) && sizeof( $breadcrumb ) !== $key + 1 ) {
+					echo '<a href="' . esc_url( $crumb[1] ) . '">' . esc_html( $crumb[0] ) . '</a>';
+				} else {
+					echo esc_html( $crumb[0] );
+				}
 
-		echo $after;
+				echo $after;
 
-		if ( sizeof( $breadcrumb ) !== $key + 1 ) {
-			echo $delimiter;
-		}
-	}
-
-	echo $wrap_after;
-
-}
+				if ( sizeof( $breadcrumb ) !== $key + 1 ) {
+					echo $delimiter;
+				}
+			}
+			echo $wrap_after;
+		} ?>
+	</a>
+</div>

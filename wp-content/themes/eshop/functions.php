@@ -189,3 +189,4 @@ function update_woocommerce_version() {
 		}		
 	}
 add_action('init', 'update_woocommerce_version');
+
