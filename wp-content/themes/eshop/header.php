@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?>>
 	<head>
 		<title>ESHOP</title>
-        <meta charset="<?php bloginfo( 'charset' ); ?>">
+		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<?php wp_head(); ?>
 	</head>
@@ -20,16 +20,16 @@
 						<a href="#" class="topbar-social-item fa fa-youtube-play"></a>
 					</div>
 					<span class="topbar-child1">
-						Free shipping for standard order over $100
+						Free shipping for standard order over Rs. 10000
 					</span>
 					<div class="topbar-child2">
 						<span class="topbar-email">
-							fashe@example.com
+							sagar@example.com
 						</span>
 						<div class="topbar-language rs1-select2">
 							<select class="selection-1" name="time">
 								<option>USD</option>
-								<option>EUR</option>
+								<option>NPR</option>
 							</select>
 						</div>
 					</div>
@@ -229,18 +229,18 @@
 					<ul class="main-menu">
 						<li class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
 							<span class="topbar-child1">
-								Free shipping for standard order over $100
+								Free shipping for standard order over Rs. 10000
 							</span>
 						</li>
 						<li class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
 							<div class="topbar-child2-mobile">
 								<span class="topbar-email">
-									fashe@example.com
+									sagar@example.com
 								</span>
 								<div class="topbar-language rs1-select2">
 									<select class="selection-1" name="time">
 										<option>USD</option>
-										<option>EUR</option>
+										<option>NPR</option>
 									</select>
 								</div>
 							</div>
@@ -255,31 +255,19 @@
 							</div>
 						</li>
 						<li class="item-menu-mobile">
-							<a href="index.html">Home</a>
-							<ul class="sub-menu">
-								<li><a href="index.html">Homepage V1</a></li>
-								<li><a href="home-02.html">Homepage V2</a></li>
-								<li><a href="home-03.html">Homepage V3</a></li>
-							</ul>
-							<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+							<a href="<?php echo get_site_url(); ?>">Home</a>
 						</li>
 						<li class="item-menu-mobile">
-							<a href="product.html">Shop</a>
+							<a href="<?php echo get_site_url(); ?>">Shop</a>
 						</li>
 						<li class="item-menu-mobile">
-							<a href="product.html">Sale</a>
+							<a href="<?php echo get_site_url(); ?>">Blog</a>
 						</li>
 						<li class="item-menu-mobile">
-							<a href="cart.html">Features</a>
+							<a href="<?php echo get_site_url(); ?>">About</a>
 						</li>
 						<li class="item-menu-mobile">
-							<a href="blog.html">Blog</a>
-						</li>
-						<li class="item-menu-mobile">
-							<a href="about.html">About</a>
-						</li>
-						<li class="item-menu-mobile">
-							<a href="contact.html">Contact</a>
+							<a href="<?php echo get_site_url(); ?>">Contact</a>
 						</li>
 					</ul>
 				</nav>

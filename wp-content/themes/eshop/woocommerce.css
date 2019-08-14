@@ -528,12 +528,23 @@ p.no-comments {
 }
 
 .widget_price_filter .price_slider_amount .button {
-	float: left;
+	float: center;
+	font-family: "Comic Sans MS";
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.8em;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 5px 5px;
+	margin: 5px 5px;
+	background-color: #f4f6f6;
 }
 
 .widget_price_filter .ui-slider {
 	position: relative;
 	text-align: left;
+	margin-top: 40px;
 }
 
 .widget_price_filter .ui-slider .ui-slider-handle {
@@ -543,7 +554,7 @@ p.no-comments {
 	height: 1em;
 	cursor: ew-resize;
 	outline: none;
-	background: royalblue;
+	background: #48a1e8;
 	box-sizing: border-box;
 	margin-top: -.25em;
 	opacity: 1;
@@ -562,7 +573,7 @@ p.no-comments {
 	z-index: 1;
 	display: block;
 	border: 0;
-	background: royalblue;
+	background: #48a1e8;
 }
 
 .widget_price_filter .price_slider_wrapper .ui-widget-content {
@@ -577,3 +588,6 @@ p.no-comments {
 	height: 100%;
 }
 
+/*.button {
+	border: 1px solid;
+}*/

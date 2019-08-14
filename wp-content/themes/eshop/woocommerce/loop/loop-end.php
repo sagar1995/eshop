@@ -10,23 +10,20 @@
 * happen. When this occurs the version of the template file will be bumped and
 * the readme will list any important changes.
 *
-	* @see 	    https://docs.woocommerce.com/document/template-structure/
-	* @package 	WooCommerce/Templates
+		* @see 	    https://docs.woocommerce.com/document/template-structure/
+		* @package 	WooCommerce/Templates
 * @version     2.0.0
 */
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
+					</div> <!-- col-sm-6 col-md-8 col-lg-9 p-b-50 ko closing -->
 				</div>
 			<div class="pagination flex-m flex-w p-t-26">
 				<a href="#" class="item-pagination flex-c-m trans-0-4 active-pagination">1</a>
 				<a href="#" class="item-pagination flex-c-m trans-0-4">2</a>
 			</div>
-			</div>
 		</div>
 	</div>
 </section>
-<!-- Container Selection -->
-	<div id="dropDownSelect1"></div>
-	<div id="dropDownSelect2"></div>

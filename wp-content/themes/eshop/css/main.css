@@ -120,7 +120,7 @@ a:hover {
 
 /* ------------------------------------ */
 h1,h2,h3,h4,h5,h6 {
-	margin: 0px;
+	margin: 6px;
 }
 
 p {
@@ -1893,7 +1893,7 @@ li.sale-noti > a {
   margin-left: 6px;
   height: 4px;
   border: none;
-  background-color: #e1e1e1;
+  /*background-color: #e1e1e1;*/
 }
 .leftbar #filter-bar .noUi-connect {
   background-color: #c5c5c5;
@@ -1907,7 +1907,7 @@ li.sale-noti > a {
   top: -5px;
   border: none;
   border-radius: 50%;
-  background: #999999;
+  /*background: #999999;*/
   cursor: pointer;
   box-shadow: none;
   outline: none;

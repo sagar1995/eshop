@@ -111,7 +111,7 @@ function eshop_scripts() {
 	
 	// Custom CSS for ESHOP
 		
-	wp_enqueue_style( 'eshop-icon', get_template_directory_uri() . '/images/icons/favicon.png', false, '1.0.0', 'all' );
+	wp_enqueue_style( 'eshop-css-icon ', get_template_directory_uri() . '/images/icons/favicon.png', false, '1.0.0', 'all' );
 	wp_enqueue_style( 'eshop-css-bootstrap', get_template_directory_uri() . '/vendor/bootstrap/css/bootstrap.min.css', false, '1.0.0', 'all' );
 	wp_enqueue_style( 'eshop-css-fonts', get_template_directory_uri() . '/fonts/font-awesome-4.7.0/css/font-awesome.min.css', false, '1.0.0', 'all' );
 	wp_enqueue_style( 'eshop-themify-icons', get_template_directory_uri() . '/fonts/themify/themify-icons.css', false, '1.0.0', 'all' );
@@ -138,6 +138,7 @@ function eshop_scripts() {
 	wp_enqueue_script('eshop-js-countdowntime', get_template_directory_uri() . '/vendor/countdowntime/countdowntime.js', array('jquery'), '1.0.0', true);
 	wp_enqueue_script('eshop-js-lightbox', get_template_directory_uri() . '/vendor/lightbox2/js/lightbox.min.js', array('jquery'), '1.0.0', true);
 	wp_enqueue_script('eshop-js-sweetalert', get_template_directory_uri() . '/vendor/sweetalert/sweetalert.min.js', array('jquery'), '1.0.0', true);
+	// wp_enqueue_script('eshop-js-nouislider', get_template_directory_uri() . '/vendor/noui/nouislider.min.js', array('jquery'), '1.0.0', true);
 	wp_enqueue_script('eshop-js-main', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0.0', true);
 	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -173,61 +174,18 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
-// Custom POST Type
-// function custom_post_type() {
-// /**
-// * Post Type: Aboutme.
-// */
-// 	$labels = array(
-// 		"name"                  => __( "Shops", "eshop" ),
-// 		"singular_name"         => __( "shop", "eshop" ),
-// 		'menu_name'             => __( 'Shops', 'eshop' ),
-// 		'name_admin_bar'        => __( 'shop', 'eshop' ),
-// 		'archives'              => __( 'shop Archives', 'eshop' ),
-// 		'attributes'            => __( 'shop Attributes', 'eshop' ),
-// 		'parent_item_colon'     => __( 'Parent shop:', 'eshop' ),
-// 		'all_items'             => __( 'All Shops', 'eshop' ),
-// 		'add_new_item'          => __( 'Add New shop', 'eshop' ),
-// 		'add_new'               => __( 'Add New', 'eshop' ),
-// 		'new_item'              => __( 'New shop', 'eshop' ),
-// 		'edit_item'             => __( 'Edit shop', 'eshop' ),
-// 		'update_item'           => __( 'Update shop', 'eshop' ),
-// 		'view_item'             => __( 'View shop', 'eshop' ),
-// 		'view_items'            => __( 'View Shops', 'eshop' ),
-// 		'search_items'          => __( 'Search shop', 'eshop' ),
-// 		'not_found'             => __( 'Not found', 'eshop' ),
-// 		'not_found_in_trash'    => __( 'Not found in Trash', 'eshop' ),
-// 		'featured_image'        => __( 'Featured Image', 'eshop' ),
-// 		'set_featured_image'    => __( 'Set featured image', 'eshop' ),
-// 		'remove_featured_image' => __( 'Remove featured image', 'eshop' ),
-// 		'use_featured_image'    => __( 'Use as featured image', 'eshop' ),
-// 		'insert_into_item'      => __( 'Insert into shop', 'eshop' ),
-// 		'uploaded_to_this_item' => __( 'Uploaded to this shop', 'eshop' ),
-// 		'items_list'            => __( 'Items list', 'eshop' ),
-// 		'items_list_navigation' => __( 'Items list navigation', 'eshop' ),
-// 		'filter_items_list'     => __( 'Filter Shops list', 'eshop' ),
-// 		);
-// 		$args = array(
-// 		"label"                 => __( "Shops", "eshop" ),
-// 		"labels"                => $labels,
-// 		"description"           => "",
-// 		"public"                => true,
-// 		"publicly_queryable"    => true,
-// 		"show_ui"               => true,
-// 		"delete_with_user"      => false,
-// 		"show_in_rest"          => false,
-// 		"rest_base"             => "",
-// 		"rest_controller_class" => "WP_REST_Posts_Controller",
-// 		"has_archive"           => false,
-// 		"show_in_nav_menus"     => true,
-// 		"exclude_from_search"   => true,
-// 		"capability_type"       => "post",
-// 		"map_meta_cap"          => true,
-// 		"hierarchical"          => false,
-// 		"rewrite"               => array( "slug" => "shop", "with_front" => true ),
-// 		"query_var"             => true,
-// 		"menu_icon"             => "dashicons-pressthis",
-// 		"supports"              => array( "title", "editor", 'thumbnail' ),
-// 	); register_post_type( "shop", $args );
-// }
-// add_action('init','custom_post_type');
+
+function update_woocommerce_version() {
+		if(class_exists('WooCommerce')) {
+			global $woocommerce;
+			
+			if(version_compare(get_option('woocommerce_db_version', null), $woocommerce->version, '!=')) {
+				update_option('woocommerce_db_version', $woocommerce->version);
+				
+				if(! wc_update_product_lookup_tables_is_running()) {
+					wc_update_product_lookup_tables();
+				}
+			}			
+		}		
+	}
+add_action('init', 'update_woocommerce_version');

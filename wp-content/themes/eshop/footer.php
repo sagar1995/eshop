@@ -11,10 +11,10 @@
 					Our vision to make entrepreneurs, businesses, and small firms grow with an integration of varieties of application and platforms.
 				</p>
 				<p class="s-text7 w-size27">
-									Feel Free to contact us at
+					Feel Free to contact us at
 					Dhobighat, Lalitpur
 					Lalitpur, Nepal
-				Call 982-3573261
+					Call 982-3573261
 				</p>
 				<div class="flex-m p-t-30">
 					<a href="#" class="fs-18 color1 p-r-20 fa fa-facebook"></a>
@@ -151,13 +151,18 @@
 		<i class="fa fa-angle-double-up" aria-hidden="true"></i>
 	</span>
 </div>
-<!-- Container Selection1 -->
+<!-- Container Selection -->
 <div id="dropDownSelect1"></div>
+<div id="dropDownSelect2"></div>
 <?php wp_footer(); ?>
 <script type="text/javascript">
 	$(".selection-1").select2({
 		minimumResultsForSearch: 20,
 		dropdownParent: $('#dropDownSelect1')
+	});
+	$(".selection-2").select2({
+		minimumResultsForSearch: 20,
+		dropdownParent: $('#dropDownSelect2')
 	});
 </script>
 <script type="text/javascript">
@@ -174,5 +179,29 @@
 		});
 	});
 </script>
+
+<script type="text/javascript">
+		
+	var filterBar = document.getElementById('filter-bar');
+
+	noUiSlider.create(filterBar, {
+		start: [ 50, 200 ],
+		connect: true,
+		range: {
+			'min': 50,
+			'max': 200
+		}
+	});
+
+	var skipValues = [
+	document.getElementById('value-lower'),
+	document.getElementById('value-upper')
+	];
+
+	filterBar.noUiSlider.on('update', function( values, handle ) {
+		skipValues[handle].innerHTML = Math.round(values[handle]) ;
+	});
+</script>
+
 </body>
 </html>

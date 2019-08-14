@@ -1,0 +1,32 @@
+2019-08-13T10:43:14+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_product_get_regular_price() in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\loop\loop-start.php:48
+Stack trace:
+#0 E:\xampp\htdocs\eshop\wp-content\plugins\woocommerce\includes\wc-core-functions.php(249): include()
+#1 E:\xampp\htdocs\eshop\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1081): wc_get_template('loop/loop-start...')
+#2 E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\archive-product.php(51): woocommerce_product_loop_start()
+#3 E:\xampp\htdocs\eshop\wp-includes\template-loader.php(78): include('E:\\xampp\\htdocs...')
+#4 E:\xampp\htdocs\eshop\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\eshop\index.php(17): require('E:\\xampp\\htdocs...')
+#6 {main}
+  thrown in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\loop\loop-start.php on line 48
+
+2019-08-13T10:43:23+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_product_get_regular_price() in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\loop\loop-start.php:48
+Stack trace:
+#0 E:\xampp\htdocs\eshop\wp-content\plugins\woocommerce\includes\wc-core-functions.php(249): include()
+#1 E:\xampp\htdocs\eshop\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1081): wc_get_template('loop/loop-start...')
+#2 E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\archive-product.php(51): woocommerce_product_loop_start()
+#3 E:\xampp\htdocs\eshop\wp-includes\template-loader.php(78): include('E:\\xampp\\htdocs...')
+#4 E:\xampp\htdocs\eshop\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\eshop\index.php(17): require('E:\\xampp\\htdocs...')
+#6 {main}
+  thrown in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\loop\loop-start.php on line 48
+
+2019-08-13T10:44:19+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function filter_woocommerce_get_regular_price(), 0 passed in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\loop\loop-start.php on line 48 and exactly 2 expected in E:\xampp\htdocs\eshop\wp-content\themes\eshop\functions.php:118
+Stack trace:
+#0 E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\loop\loop-start.php(48): filter_woocommerce_get_regular_price()
+#1 E:\xampp\htdocs\eshop\wp-content\plugins\woocommerce\includes\wc-core-functions.php(249): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\eshop\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1081): wc_get_template('loop/loop-start...')
+#3 E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\archive-product.php(51): woocommerce_product_loop_start()
+#4 E:\xampp\htdocs\eshop\wp-includes\template-loader.php(78): include('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\eshop\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\eshop\index.php(1 in E:\xampp\htdocs\eshop\wp-content\themes\eshop\functions.php on line 118
+
