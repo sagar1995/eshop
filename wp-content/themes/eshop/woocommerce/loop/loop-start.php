@@ -10,8 +10,8 @@
 * happen. When this occurs the version of the template file will be bumped and
 * the readme will list any important changes.
 *
-						* @see 	    https://docs.woocommerce.com/document/template-structure/
-						* @package 	WooCommerce/Templates
+								* @see 	    https://docs.woocommerce.com/document/template-structure/
+								* @package 	WooCommerce/Templates
 * @version     3.3.0
 */
 if ( ! defined( 'ABSPATH' ) ) {
@@ -52,11 +52,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<div class="flex-sb-m flex-w p-b-35">
 					<div class="flex-w">
 						<?php
-							remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
 							do_action( 'woocommerce_before_shop_loop' );
 						?>
 					</div>
-					<br>
-					<br>
 				</div>
-				<div class="row">
+			</div>
+		<div class="row">

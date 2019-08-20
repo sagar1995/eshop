@@ -12,28 +12,31 @@
 			<!-- Header desktop -->
 			<div class="container-menu-header">
 				<div class="topbar">
-					<div class="topbar-social">
-						<a href="#" class="topbar-social-item fa fa-facebook"></a>
-						<a href="#" class="topbar-social-item fa fa-instagram"></a>
-						<a href="#" class="topbar-social-item fa fa-pinterest-p"></a>
-						<a href="#" class="topbar-social-item fa fa-snapchat-ghost"></a>
-						<a href="#" class="topbar-social-item fa fa-youtube-play"></a>
-					</div>
-					<span class="topbar-child1">
-						Free shipping for standard order over Rs. 10000
+				<div class="topbar-social">
+					<a href="#" class="topbar-social-item fa fa-facebook"></a>
+					<a href="#" class="topbar-social-item fa fa-instagram"></a>
+					<a href="#" class="topbar-social-item fa fa-pinterest-p"></a>
+					<a href="#" class="topbar-social-item fa fa-snapchat-ghost"></a>
+					<a href="#" class="topbar-social-item fa fa-youtube-play"></a>
+				</div>
+
+				<span class="topbar-child1">
+					Free shipping for standard order over $100
+				</span>
+
+				<div class="topbar-child2">
+					<span class="topbar-email">
+						fashe@example.com
 					</span>
-					<div class="topbar-child2">
-						<span class="topbar-email">
-							sagar@example.com
-						</span>
-						<div class="topbar-language rs1-select2">
-							<select class="selection-1" name="time">
-								<option>USD</option>
-								<option>NPR</option>
-							</select>
-						</div>
+
+					<div class="topbar-language rs1-select2">
+						<select class="selection-1" name="time">
+							<option>USD</option>
+							<option>EUR</option>
+						</select>
 					</div>
 				</div>
+			</div>
 				<div class="wrap_header">
 					<!-- Logo -->
 					<a href="index.php" class="logo">
@@ -139,7 +142,7 @@
 			<!-- Header Mobile -->
 			<div class="wrap_header_mobile">
 				<!-- Logo moblie -->
-				<a href="index.html" class="logo-mobile">
+				<a href="home.php" class="logo-mobile">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/icons/logo.png" alt="IMG-LOGO">
 				</a>
 				<!-- Button show menu -->

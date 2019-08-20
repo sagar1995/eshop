@@ -1,0 +1,33 @@
+2019-08-19T05:21:50+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_shop_loop_item_title() in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-product.php:79
+Stack trace:
+#0 E:\xampp\htdocs\eshop\wp-includes\template.php(724): require()
+#1 E:\xampp\htdocs\eshop\wp-content\plugins\woocommerce\includes\wc-core-functions.php(195): load_template('E:\\xampp\\htdocs...', false)
+#2 E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\archive-product.php(61): wc_get_template_part('content', 'product')
+#3 E:\xampp\htdocs\eshop\wp-includes\template-loader.php(78): include('E:\\xampp\\htdocs...')
+#4 E:\xampp\htdocs\eshop\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\eshop\index.php(17): require('E:\\xampp\\htdocs...')
+#6 {main}
+  thrown in E:\xampp\htdocs\eshop\wp-content\themes\eshop\woocommerce\content-product.php on line 79
+
+2019-08-19T08:08:08+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\page-cart.php on line 181
+
+2019-08-19T08:08:53+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\page-cart.php on line 173
+
+2019-08-19T09:33:34+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\page-cart.php on line 208
+
+2019-08-19T09:34:34+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\page-cart.php on line 210
+
+2019-08-19T09:34:38+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\page-cart.php on line 210
+
+2019-08-19T09:34:38+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\page-cart.php on line 210
+
+2019-08-19T09:34:48+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\page-cart.php on line 210
+
+2019-08-19T09:35:25+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\page-cart.php on line 209
+
+2019-08-19T09:38:40+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\page-cart.php on line 209
+
+2019-08-19T09:40:25+00:00 CRITICAL Cannot redeclare wc_coupons_enabled() (previously declared in E:\xampp\htdocs\eshop\wp-content\plugins\woocommerce\includes\wc-coupon-functions.php:69) in E:\xampp\htdocs\eshop\wp-content\themes\eshop\functions.php on line 212
+
+2019-08-19T09:41:13+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\page-cart.php on line 209
+

@@ -18,12 +18,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-					</div> <!-- col-sm-6 col-md-8 col-lg-9 p-b-50 ko closing -->
-				</div>
-			<div class="pagination flex-m flex-w p-t-26">
+					</div> 
+			<!-- <div class="pagination flex-m flex-w p-t-26">
 				<a href="#" class="item-pagination flex-c-m trans-0-4 active-pagination">1</a>
 				<a href="#" class="item-pagination flex-c-m trans-0-4">2</a>
-			</div>
+			</div> -->
+			<?php do_action( 'woocommerce_after_shop_loop' ); ?>
 		</div>
 	</div>
 </section>

@@ -63,6 +63,7 @@ table.shop_table_responsive tr td.download-actions .button {
 	}
 	table.shop_table_responsive tr td {
 		display: table-cell;
+		padding-left: 65px;
 	}
 	table.shop_table_responsive tr td:before {
 		display: none;
@@ -533,11 +534,11 @@ p.no-comments {
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
-    letter-spacing: 0.8em;
+    letter-spacing: 0.4em;
     border: 2px solid;
     border-radius: 5px;
-    padding: 5px 5px;
-	margin: 5px 5px;
+    padding: 5px 20px;
+	margin: 0px 50px;
 	background-color: #f4f6f6;
 }
 
