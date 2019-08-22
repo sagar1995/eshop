@@ -26,9 +26,13 @@ if ( ! $messages ) {
 ?>
 
 <?php foreach ( $messages as $message ) : ?>
-	<div class="woocommerce-message" role="alert">
+	<?php if ( strpos($message, 'added') == false ) { ?>
+	<div class="woocommerce-message alert alert-dismissible" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<strong>Success! </strong>
 		<?php
 			echo wc_kses_notice( $message );
 		?>
 	</div>
+	<?php } ?>
 <?php endforeach; ?>

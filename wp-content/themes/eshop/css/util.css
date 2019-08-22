@@ -2355,9 +2355,8 @@
 -----------------------------------------------------------
 */
 .wrap-pic-w img {
-	width: 300px;
-	height: 300px;
-	padding: 20px;		
+	width: 280px;
+	height: 280px;
 }
 
 .wrap-pic-max-w img {max-width: 100%;}

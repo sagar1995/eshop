@@ -26,14 +26,12 @@ if ( $max_value && $min_value === $max_value ) {
 	$label = ! empty( $args['product_name'] ) ? sprintf( __( '%s quantity', 'woocommerce' ), wp_strip_all_tags( $args['product_name'] ) ) : __( 'Quantity', 'woocommerce' );
 		?>
 	<div class="flex-w bo5 of-hidden m-r-22 m-t-10 m-b-10">
-		<button class="btn-num-product-down color1 flex-c-m size7 bg8 eff2">
-			<i class="fs-12 fa fa-minus" aria-hidden="true"></i>
-		</button>
-
+		
+		<label class="screen-reader-text" for="<?php echo esc_attr( $input_id ); ?>"><?php echo esc_attr( $label ); ?></label>
 		<input
 		type="number"
 		id="<?php echo esc_attr( $input_id ); ?>"
-		class="size8 m-text18 t-center num-product"
+		class="<?php echo esc_attr( join( ' ', (array) $classes ) ); ?>"
 		step="<?php echo esc_attr( $step ); ?>"
 		min="<?php echo esc_attr( $min_value ); ?>"
 		max="<?php echo esc_attr( 0 < $max_value ? $max_value : '' ); ?>"
@@ -43,9 +41,6 @@ if ( $max_value && $min_value === $max_value ) {
 		size="4"
 		inputmode="<?php echo esc_attr( $inputmode ); ?>" />
 		
-		<button class="btn-num-product-up color1 flex-c-m size7 bg8 eff2">
-			<i class="fs-12 fa fa-plus" aria-hidden="true"></i>
-		</button>
 	</div>
 <?php
 }

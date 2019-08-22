@@ -12,9 +12,12 @@
 				</p>
 				<p class="s-text7 w-size27">
 					Feel Free to contact us at
-					Dhobighat, Lalitpur
-					Lalitpur, Nepal
-					Call 982-3573261
+				</p>
+				<p class="s-text7 w-size27">
+					Dhobighat, Lalitpur, Nepal
+				</p>
+				<p class="s-text7 w-size27">
+					Call 982-3573261 
 				</p>
 				<div class="flex-m p-t-30">
 					<a href="#" class="fs-18 color1 p-r-20 fa fa-facebook"></a>
@@ -36,7 +39,7 @@
 					</a>
 				</li>
 				<li class="p-b-9">
-					<a href="#" class="s-text7">
+					<a href="<?php echo get_site_url(); ?>/test" class="s-text7">
 						Women
 					</a>
 				</li>
@@ -112,7 +115,7 @@
 			</h4>
 			<form>
 				<div class="effect1 w-size9">
-					<input class="s-text7 bg6 w-full p-b-5" type="text" name="email" placeholder="email@example.com">
+					<input class="s-text7 bg6 w-full p-b-5" type="text" name="email" placeholder="youremail@example.com">
 					<span class="effect1-line"></span>
 				</div>
 				<div class="w-size2 p-t-20">
@@ -130,15 +133,6 @@
 		</a>
 		<a href="#">
 			<img class="h-size2" src="<?php echo get_template_directory_uri(); ?>/images/icons/visa.png" alt="IMG-VISA">
-		</a>
-		<a href="#">
-			<img class="h-size2" src="<?php echo get_template_directory_uri(); ?>/images/icons/mastercard.png" alt="IMG-MASTERCARD">
-		</a>
-		<a href="#">
-			<img class="h-size2" src="<?php echo get_template_directory_uri(); ?>/images/icons/express.png" alt="IMG-EXPRESS">
-		</a>
-		<a href="#">
-			<img class="h-size2" src="<?php echo get_template_directory_uri(); ?>/images/icons/discover.png" alt="IMG-DISCOVER">
 		</a>
 		<div class="t-center s-text8 p-t-20">
 			Copyright © 2019 All rights reserved. | This template is made by <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://alpastechonology.com" target="_blank">Alpas Technology Pvt. Lmd.</a>

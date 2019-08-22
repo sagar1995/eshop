@@ -31,7 +31,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <section class="bgwhite p-t-55 p-b-65">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6 col-md-4 col-lg-3 p-b-50">
+			<div class="col-sm-3 col-md-4 col-lg-3 p-b-50">
 				<div class="leftbar p-r-20 p-r-0-sm">
 					<!--  -->
 					<h4 class="m-text14 p-b-7">
@@ -42,7 +42,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 							<?php get_sidebar(); ?>
 						</li>
 						<section class="widget woocommerce">
-							<a href="<?php echo get_site_url().'/shop'; ?>" class="btn btn-primary" style="width: 100% !important">Clear Filter</a>
+							<a href="<?php echo get_site_url().'/shop'; ?>" class="btn btn-secondary" style="width: 100% !important">Clear Filter</a>
 						</section>
 					</ul>
 					

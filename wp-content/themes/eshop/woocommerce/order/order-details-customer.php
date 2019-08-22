@@ -25,13 +25,13 @@ $show_shipping = ! wc_ship_to_billing_address_only() && $order->needs_shipping_a
 	<?php if ( $show_shipping ) : ?>
 
 	<section class="woocommerce-columns woocommerce-columns--2 woocommerce-columns--addresses col2-set addresses">
-		<div class="woocommerce-column woocommerce-column--1 woocommerce-column--billing-address col-1">
+		<div class="s-text13 p-t-5 p-b-5">
 
 	<?php endif; ?>
 
-	<h2 class="woocommerce-column__title"><?php esc_html_e( 'Billing address', 'woocommerce' ); ?></h2>
+	<h2 class="woocommerce-column__title m-text23"><?php esc_html_e( 'Billing address', 'woocommerce' ); ?></h2>
 
-	<address>
+	<div class="col-md-10">
 		<?php echo wp_kses_post( $order->get_formatted_billing_address( __( 'N/A', 'woocommerce' ) ) ); ?>
 
 		<?php if ( $order->get_billing_phone() ) : ?>
@@ -41,17 +41,17 @@ $show_shipping = ! wc_ship_to_billing_address_only() && $order->needs_shipping_a
 		<?php if ( $order->get_billing_email() ) : ?>
 			<p class="woocommerce-customer-details--email"><?php echo esc_html( $order->get_billing_email() ); ?></p>
 		<?php endif; ?>
-	</address>
+	</div>
 
 	<?php if ( $show_shipping ) : ?>
 
 		</div><!-- /.col-1 -->
 
-		<div class="woocommerce-column woocommerce-column--2 woocommerce-column--shipping-address col-2">
-			<h2 class="woocommerce-column__title"><?php esc_html_e( 'Shipping address', 'woocommerce' ); ?></h2>
-			<address>
+		<div class="s-text13 p-t-5 p-b-5">
+			<h2 class="woocommerce-column__title m-text23"><?php esc_html_e( 'Shipping address', 'woocommerce' ); ?></h2>
+			<div class="col-md-10">
 				<?php echo wp_kses_post( $order->get_formatted_shipping_address( __( 'N/A', 'woocommerce' ) ) ); ?>
-			</address>
+			</div>
 		</div><!-- /.col-2 -->
 
 	</section><!-- /.col2-set -->

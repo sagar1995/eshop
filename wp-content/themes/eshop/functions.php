@@ -174,23 +174,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
-
-function update_woocommerce_version() {
-		if(class_exists('WooCommerce')) {
-			global $woocommerce;
-			
-			if(version_compare(get_option('woocommerce_db_version', null), $woocommerce->version, '!=')) {
-				update_option('woocommerce_db_version', $woocommerce->version);
-				
-				if(! wc_update_product_lookup_tables_is_running()) {
-					wc_update_product_lookup_tables();
-				}
-			}			
-		}		
-	}
-add_action('init', 'update_woocommerce_version');
-
-
 // remove_action('woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10);
 remove_action('woocommerce_before_shop_loop_item_title', 'woocommerce_show_product_loop_sale_flash', 10);
 remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
@@ -198,12 +181,60 @@ remove_action('woocommerce_before_shop_loop', 'woocommerce_result_count', 20);
 remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5);
 remove_action('woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10);
 remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10);
-
-
 // These are actions you can unhook/remove!
- 
 add_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display' );
 add_action( 'woocommerce_cart_collaterals', 'woocommerce_cart_totals', 10 );
 add_action( 'woocommerce_proceed_to_checkout', 'woocommerce_button_proceed_to_checkout', 20 );
 
+function woocommerce_quantity_input($data = null) {
+	global $product;
+	if (!$data) {
+	$defaults = array(
+	'input_name'   => 'quantity',
+	'input_value'   => '1',
+	'max_value'     => apply_filters( 'woocommerce_quantity_input_max', '', $product ),
+	'min_value'     => apply_filters( 'woocommerce_quantity_input_min', '', $product ),
+	'step'         => apply_filters( 'woocommerce_quantity_input_step', '1', $product ),
+	'style'         => apply_filters( 'woocommerce_quantity_style', 'float:left;', $product )
+	);
+	} else {
+	$defaults = array(
+	'input_name'   => $data['input_name'],
+	'input_value'   => $data['input_value'],
+	'step'         => apply_filters( 'cw_woocommerce_quantity_input_step', '1', $product ),
+	'max_value'     => apply_filters( 'cw_woocommerce_quantity_input_max', '', $product ),
+	'min_value'     => apply_filters( 'cw_woocommerce_quantity_input_min', '', $product ),
+	'style'         => apply_filters( 'cw_woocommerce_quantity_style', 'float:left;', $product )
+	);
+	}
+	if ( ! empty( $defaults['min_value'] ) )
+	$min = $defaults['min_value'];
+	else $min = 1;
+	if ( ! empty( $defaults['max_value'] ) )
+	$max = $defaults['max_value'];
+	else $max = 15;
+	if ( ! empty( $defaults['step'] ) )
+	$step = $defaults['step'];
+	else $step = 1;
+	$options = '';
+	for ( $count = $min; $count <= $max; $count = $count+$step ) {
+	$selected = $count === $defaults['input_value'] ? ' selected' : '';
+	$options .= '<option value="' . $count . '"'.$selected.'>' . $count . '</option>';
+	}
+	echo '<div class="cw_quantity_select" style="' . $defaults['style'] . '"><select name="' . esc_attr( $defaults['input_name'] ) . '" title="' . _x( 'Qty', 'Product Description', 'woocommerce' ) . '" class="cw_qty">' . $options . '</select></div>';
+}
 
+// Custom cart Count Function
+add_filter( 'woocommerce_add_to_cart_fragments', 'refresh_cart_count', 50, 1 );
+function refresh_cart_count( $fragments ){
+    ob_start();
+    ?>
+    <span class="header-icons-noti" id="cart-count"><?php
+    $cart_count = WC()->cart->get_cart_contents_count();
+    echo sprintf ( _n( '%d', '%d', $cart_count ), $cart_count );
+    ?></span>
+    <?php
+     $fragments['#cart-count'] = ob_get_clean();
+
+    return $fragments;
+}

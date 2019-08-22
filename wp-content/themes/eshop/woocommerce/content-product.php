@@ -22,64 +22,66 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 $item_col = "col-sm-12 col-md-6 col-lg-4 p-b-50";
 }
 ?>
-<div <?php wc_product_class( '$item_col', $product ); ?>>
-	<div class="block2">
-		<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-			<?php
-			/**
-			* Hook: woocommerce_before_shop_loop_item.
-			*
-			* @hooked woocommerce_template_loop_product_link_open - 10
-			*/
-			// do_action( 'woocommerce_before_shop_loop_item' );
-			/**
-			* Hook: woocommerce_before_shop_loop_item_title.
-			*
-			* @hooked woocommerce_show_product_loop_sale_flash - 10
-			* @hooked woocommerce_template_loop_product_thumbnail - 10
-			*/
-			do_action( 'woocommerce_before_shop_loop_item_title' );
-			?>
-			<div class="block2-overlay trans-0-4">
-				<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-					<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-					<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-				</a>
-				<div class="block2-btn-addcart w-size1 trans-0-4">
-					<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-					<?php woocommerce_template_loop_add_to_cart(); ?>
-					</button>
+<div class="col-sm-4">
+	<div <?php wc_product_class( '$item_col', $product ); ?>>
+		<div class="block2">
+			<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
+				<?php
+				/**
+				* Hook: woocommerce_before_shop_loop_item.
+				*
+				* @hooked woocommerce_template_loop_product_link_open - 10
+				*/
+				// do_action( 'woocommerce_before_shop_loop_item' );
+				/**
+				* Hook: woocommerce_before_shop_loop_item_title.
+				*
+				* @hooked woocommerce_show_product_loop_sale_flash - 10
+				* @hooked woocommerce_template_loop_product_thumbnail - 10
+				*/
+				do_action( 'woocommerce_before_shop_loop_item_title' );
+				?>
+				<div class="block2-overlay trans-0-4">
+					<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+						<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+						<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+					</a>
+					<div class="block2-btn-addcart w-size1 trans-0-4">
+						<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+						<?php woocommerce_template_loop_add_to_cart(); ?>
+						</button>
+					</div>
 				</div>
+				<?php
+				/**
+				* Hook: woocommerce_shop_loop_item_title.
+				*
+				* @hooked woocommerce_template_loop_product_title - 10
+				*/
+				// do_action( 'woocommerce_shop_loop_item_title' );
+				/**
+				* Hook: woocommerce_after_shop_loop_item_title.
+				*
+				* @hooked woocommerce_template_loop_rating - 5
+				* @hooked woocommerce_template_loop_price - 10
+				*/
+				// do_action( 'woocommerce_after_shop_loop_item_title' );
+				/**
+				* Hook: woocommerce_after_shop_loop_item.
+				*
+				* @hooked woocommerce_template_loop_product_link_close - 5
+				* @hooked woocommerce_template_loop_add_to_cart - 10
+				*/
+				do_action( 'woocommerce_after_shop_loop_item' );
+				?>
 			</div>
-			<?php
-			/**
-			* Hook: woocommerce_shop_loop_item_title.
-			*
-			* @hooked woocommerce_template_loop_product_title - 10
-			*/
-			// do_action( 'woocommerce_shop_loop_item_title' );
-			/**
-			* Hook: woocommerce_after_shop_loop_item_title.
-			*
-			* @hooked woocommerce_template_loop_rating - 5
-			* @hooked woocommerce_template_loop_price - 10
-			*/
-			// do_action( 'woocommerce_after_shop_loop_item_title' );
-			/**
-			* Hook: woocommerce_after_shop_loop_item.
-			*
-			* @hooked woocommerce_template_loop_product_link_close - 5
-			* @hooked woocommerce_template_loop_add_to_cart - 10
-			*/
-			do_action( 'woocommerce_after_shop_loop_item' );
-			?>
-		</div>
-		<div class="block2-txt p-t-20" style="text-align: center;">
-			<a href="<?php the_permalink();  ?>"><?php do_action( 'woocommerce_shop_loop_item_title' );?></a>
-			<?php
-				
-				do_action( 'woocommerce_after_shop_loop_item_title' );
-			?>
+			<div class="block2-txt p-t-20" style="text-align: center;">
+				<a href="<?php the_permalink();  ?>"><?php do_action( 'woocommerce_shop_loop_item_title' );?></a>
+				<?php
+					
+					do_action( 'woocommerce_after_shop_loop_item_title' );
+				?>
+			</div>
 		</div>
 	</div>
 </div>

@@ -97,7 +97,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</table>
 
 	<div class="wc-proceed-to-checkout">
-		<?php do_action( 'woocommerce_proceed_to_checkout' ); ?>
+		<a href="http://localhost:8888/eshop/checkout/" class="checkout-button button alt wc-forward">
+	Proceed to checkout</a>
 	</div>
 
 	<?php do_action( 'woocommerce_after_cart_totals' ); ?>
