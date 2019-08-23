@@ -29,9 +29,9 @@ $show_shipping = ! wc_ship_to_billing_address_only() && $order->needs_shipping_a
 
 	<?php endif; ?>
 
-	<h2 class="woocommerce-column__title m-text23"><?php esc_html_e( 'Billing address', 'woocommerce' ); ?></h2>
+	<h2 id="billadd" class="woocommerce-column__title m-text23"><?php esc_html_e( 'Billing address', 'woocommerce' ); ?></h2>
 
-	<div class="col-md-10">
+	<div class="col-md-10" id=billadddet>
 		<?php echo wp_kses_post( $order->get_formatted_billing_address( __( 'N/A', 'woocommerce' ) ) ); ?>
 
 		<?php if ( $order->get_billing_phone() ) : ?>

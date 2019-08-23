@@ -29,7 +29,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 	<div class="row">
 		<div class="col-md-8" id="customer_details">
 			<div>
-				<h4 class="m-text25 p-b-14">billing address</h4>
+				<h4 class="m-text25 p-b-14" id="myheader">billing address</h4>
 				<?php do_action( 'woocommerce_checkout_billing' ); ?>
 				<?php do_action( 'woocommerce_checkout_shipping' ); ?>
 				

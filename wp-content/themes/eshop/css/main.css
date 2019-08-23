@@ -506,6 +506,7 @@ iframe {
 /*[ Top bar ]
 ===========================================================*/
 .topbar {
+  margin-top: 28px;
   height: 45px;
   background-color: #f5f5f5;
   position: relative;
@@ -1840,6 +1841,7 @@ li.sale-noti > a {
   min-height: 239px;
   padding-left: 15px;
   padding-right: 15px;
+  /*margin-top: -31px;*/
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: cover;
@@ -1914,36 +1916,6 @@ li.sale-noti > a {
   -o-box-shadow: 0 0 0px 2px black;
   -ms-box-shadow: 0 0 0px 2px black;
 }
-
-/*[ Pagination ]
-///////////////////////////////////////////////////////////
-*/
-.pagination {
-  margin-right: -6px;
-  margin-left: -6px;
-}
-
-.item-pagination {
-  font-family: Montserrat-Regular;
-  font-size: 13px;
-  color: #808080;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: 1px solid #eeeeee;
-  margin: 6px;
-}
-
-.item-pagination:hover {
-  background-color: #222222;
-  color: white;
-}
-
-.active-pagination {
-  background-color: #222222;
-  color: white;
-}
-
 
 /*[ Slick3 ]
 ///////////////////////////////////////////////////////////
@@ -2459,6 +2431,9 @@ label{
 .m-text25 {
   font-size: 16px;
   letter-spacing: 0.2em;
+}
+
+h4#myheader{
   padding-left: 140px;
 }
 
@@ -2501,7 +2476,7 @@ th.product-total {
 }
 
 td.product-name {
-width: 30%;
+width: 50%;
 line-height: 2.5;
 }
 
@@ -2532,7 +2507,7 @@ ul.woocommerce-shipping-methods{
 }
 
 .order-receieve{
-  padding-top: 40px;
+  padding-top: 55px;
   padding-left: 60px;
 }
 
@@ -2586,7 +2561,7 @@ color: #83b582;
 }
 
 .pagination a:hover {
-  border-color: #136fb5;
+  border-color: #da4302;
 }
 
 .pagination a > i {
@@ -2595,5 +2570,32 @@ color: #83b582;
 
 .pagination .current {
   color: #323846;
-  border-color: #136fb5;
+  border-color: #313131;
+}
+
+h3#addinfo{
+  margin-top: 30px;
+  margin-left: -7px;
+}
+
+#thankyou{
+  margin-bottom: 30px;
+}
+
+#billadd{
+  padding-top: 20px;
+  margin: 3px;
+}
+
+#orderdetail{
+  margin-top: 20px;
+  padding-left: 3px;
+}
+
+#detailtitle{
+  margin-left: -3px;
+}
+
+#billadddet{
+  padding-left: 4px;
 }

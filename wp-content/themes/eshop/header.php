@@ -21,18 +21,18 @@
 				</div>
 
 				<span class="topbar-child1">
-					Free shipping for standard order over $100
+					Free shipping for standard order over Rs. 10000
 				</span>
 
 				<div class="topbar-child2">
 					<span class="topbar-email">
-						fashe@example.com
+						youremail@example.com
 					</span>
 
 					<div class="topbar-language rs1-select2">
 						<select class="selection-1" name="time">
+							<option>NPR</option>
 							<option>USD</option>
-							<option>EUR</option>
 						</select>
 					</div>
 				</div>
