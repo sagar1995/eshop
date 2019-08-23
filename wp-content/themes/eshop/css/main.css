@@ -1,44 +1,8 @@
 /*------------------------------------------------------------------
-Project:  
-Version:  
-Last change:  
-Assigned to:  Le Xuan Bach
-Primary use:  Company
+Project: WooCommerce
+Assigned to:  Sagar Rai
+Primary use:  Alpas Technology Pvt. Lmd. Company
 -------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[LAYOUT]
-
-* body
-  + Header / header
-  + Page Content / .page-content .name-page
-        + Section Layouts / section .name-section
-        ...
-  + Footer / footer
-
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[COLOR CODES]
-
-# Text Color      :  
-# Primary Color 01:  
-# Primary Color 02:   
-# Primary Color 03:  
-
-------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[TYPOGRAPHY]
-
-Body            : 16px/1.6 '', Arial, sans-serif;
-Title           : 18px/1.6 '', Arial, sans-serif;
-Paragrap        : 18px/1.6 '', Arial, sans-serif;
-Input, textarea : 14px/1.6 '', Arial, sans-serif;
--------------------------------------------------------------------*/
-
-
-
-/*[ FONT ]
-///////////////////////////////////////////////////////////
-*/
 
 @font-face {
   font-family: Montserrat-Regular;
@@ -2583,4 +2547,53 @@ color: #83b582;
   padding-left: 20px;
   margin-bottom: 20px;
   border: none;
+}
+
+
+/* Pagination
+-------------------------------------------------------*/
+
+.pagination {
+  margin: 0 auto;
+  border-radius: 0;
+  display: block;
+  text-align: center;
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.pagination a,
+.pagination span {
+  background-color: #fff;
+  padding: 8px;
+  font-size: 13px;
+  display: inline-block;
+  border-bottom: 2px solid #f2f2f2;
+  width: 38px;
+  height: 38px;
+  line-height: 20px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: -2px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.pagination a {
+  color: #7a7a7a;
+}
+
+.pagination a:hover {
+  border-color: #136fb5;
+}
+
+.pagination a > i {
+  font-size: 16px;
+}
+
+.pagination .current {
+  color: #323846;
+  border-color: #136fb5;
 }

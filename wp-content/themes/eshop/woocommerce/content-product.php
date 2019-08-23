@@ -78,10 +78,9 @@ $item_col = "col-sm-12 col-md-6 col-lg-4 p-b-50";
 			<div class="block2-txt p-t-20" style="text-align: center;">
 				<a href="<?php the_permalink();  ?>"><?php do_action( 'woocommerce_shop_loop_item_title' );?></a>
 				<?php
-					
 					do_action( 'woocommerce_after_shop_loop_item_title' );
 				?>
-			</div>
+			</div><br><br>
 		</div>
 	</div>
 </div>
