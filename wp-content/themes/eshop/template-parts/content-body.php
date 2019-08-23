@@ -2,7 +2,7 @@
 	<section class="slide1">
 		<div class="wrap-slick1">
 			<div class="slick1">
-				<div class="item-slick1 item1-slick1" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/master-slide-02.jpg);">
+				<div class="item-slick1 item1-slick1" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/shoping.jpg);">
 					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
 						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
 							Men Collection 2019
@@ -21,7 +21,7 @@
 					</div>
 				</div>
 
-				<div class="item-slick1 item2-slick1" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/master-slide-03.jpg);">
+				<div class="item-slick1 item2-slick1" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/shoping1.jpg);">
 					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
 						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="rollIn">
 							Women Collection 2019
@@ -40,7 +40,7 @@
 					</div>
 				</div>
 
-				<div class="item-slick1 item3-slick1" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/master-slide-04.jpg);">
+				<div class="item-slick1 item3-slick1" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/shoping2.jpg);">
 					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
 						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="rotateInDownLeft">
 							Child Collection 2019

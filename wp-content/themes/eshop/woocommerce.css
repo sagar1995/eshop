@@ -531,7 +531,7 @@ p.no-comments {
 
 .widget_price_filter .price_slider_amount .button {
 	float: center;
-	font-family: "Comic Sans MS";
+	font-family: "Montserrat-Regular";
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
@@ -540,7 +540,9 @@ p.no-comments {
     border-radius: 5px;
     padding: 5px 20px;
 	margin: 0px 50px;
-	background-color: #f4f6f6;
+	background-color: #333333;
+	color: #ffffff;
+	border-radius: 15px;
 }
 
 .widget_price_filter .ui-slider {
@@ -556,7 +558,7 @@ p.no-comments {
 	height: 1em;
 	cursor: ew-resize;
 	outline: none;
-	background: #8fc2ea;
+	background: #999999;
 	box-sizing: border-box;
 	margin-top: -.25em;
 	opacity: 1;
@@ -575,7 +577,7 @@ p.no-comments {
 	z-index: 1;
 	display: block;
 	border: 0;
-	background: #8fc2ea;
+	background: #c5c5c5;
 }
 
 .widget_price_filter .price_slider_wrapper .ui-widget-content {
