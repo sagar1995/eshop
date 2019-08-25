@@ -249,3 +249,23 @@ function new_loop_shop_per_page( $products ) {
   $products = 6;
   return $products;
 }
+
+// Custom Menu
+function add_your_menu() {
+  add_menu_page( 'Home Page', 'Homepage', 'manage_options', 'custom-menu.php', 'your_menu_function', 'dashicons-chart-pie', 5);
+}
+add_action('admin_menu', 'add_your_menu');
+
+
+/**
+ * Custom Post types.
+ */
+require get_template_directory() . '/inc/custom-post-types.php';
+
+// Limitation on excerpt
+function custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 40 );
+
+

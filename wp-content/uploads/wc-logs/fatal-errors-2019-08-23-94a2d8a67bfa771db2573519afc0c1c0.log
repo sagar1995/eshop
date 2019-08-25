@@ -159,3 +159,33 @@ Stack trace:
 
 2019-08-23T07:27:18+00:00 CRITICAL syntax error, unexpected ')' in E:\xampp\htdocs\eshop\wp-content\themes\eshop\functions.php on line 264
 
+2019-08-23T15:19:10+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\functions.php on line 311
+
+2019-08-23T15:20:31+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\functions.php on line 314
+
+2019-08-23T15:20:33+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\functions.php on line 314
+
+2019-08-23T15:20:33+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\functions.php on line 314
+
+2019-08-23T17:38:03+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\home.php on line 41
+
+2019-08-23T17:38:24+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\home.php on line 41
+
+2019-08-23T17:38:29+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\home.php on line 41
+
+2019-08-23T17:39:08+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\home.php on line 41
+
+2019-08-23T17:40:32+00:00 CRITICAL syntax error, unexpected end of file in E:\xampp\htdocs\eshop\wp-content\themes\eshop\home.php on line 41
+
+2019-08-23T17:40:58+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in E:\xampp\htdocs\eshop\wp-content\themes\eshop\home.php on line 40
+
+2019-08-23T17:42:07+00:00 CRITICAL syntax error, unexpected '}' in E:\xampp\htdocs\eshop\wp-content\themes\eshop\home.php on line 40
+
+2019-08-23T17:58:58+00:00 CRITICAL syntax error, unexpected '}', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in E:\xampp\htdocs\eshop\wp-content\themes\eshop\home.php on line 37
+
+2019-08-23T17:59:28+00:00 CRITICAL syntax error, unexpected '}', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in E:\xampp\htdocs\eshop\wp-content\themes\eshop\home.php on line 37
+
+2019-08-23T18:00:24+00:00 CRITICAL syntax error, unexpected '}', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in E:\xampp\htdocs\eshop\wp-content\themes\eshop\home.php on line 37
+
+2019-08-23T18:03:30+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE) in E:\xampp\htdocs\eshop\wp-content\themes\eshop\home.php on line 43
+
