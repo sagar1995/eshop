@@ -20,13 +20,14 @@ if ( post_password_required() ) {
 }
 ?>
 
+
 <div id="comments" class="comments-area">
 
 	<?php
 	// You can start editing here -- including this comment!
 	if ( have_comments() ) :
 		?>
-		<h2 class="comments-title">
+		<h2 class="comments-title p-b-11 m-text24">
 			<?php
 			$eshop_comment_count = get_comments_number();
 			if ( '1' === $eshop_comment_count ) {
@@ -38,7 +39,7 @@ if ( post_password_required() ) {
 			} else {
 				printf( // WPCS: XSS OK.
 					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $eshop_comment_count, 'comments title', 'eshop' ) ),
+					esc_html( _nx( '%1$s Comment on &ldquo;%2$s&rdquo;', '%1$s Comments on &ldquo;%2$s&rdquo;', $eshop_comment_count, 'comments title', 'eshop' ) ),
 					number_format_i18n( $eshop_comment_count ),
 					'<span>' . get_the_title() . '</span>'
 				);
@@ -48,17 +49,11 @@ if ( post_password_required() ) {
 
 		<?php the_comments_navigation(); ?>
 
-		<ol class="comment-list">
-			<?php
-			wp_list_comments( array(
-				'style'      => 'ol',
-				'short_ping' => true,
-			) );
-			?>
-		</ol><!-- .comment-list -->
+		<ul class="comment-list blog-detail-txt">
+			<?php wp_list_comments( 'type=comment&callback=mytheme_comment' ); ?>
+		</ul>	
 
 		<?php
-		the_comments_navigation();
 
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() ) :

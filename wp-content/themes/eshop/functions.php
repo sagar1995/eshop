@@ -268,4 +268,58 @@ function custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 40 );
 
+// Custom Comments
+function mytheme_comment($comment, $args, $depth) {
+	// echo "<pre>"; print_r($depth);
+    if ( 'div' === $args['style'] ) {
+        $tag       = 'div';
+        $add_below = 'comment';
+    } else {
+        $tag       = 'div';
+        $add_below = 'div-comment';
+    }?>
+    <<?php echo $tag; ?> <?php comment_class( $depth > 1 ? 'comment-reply' : 'comment-body' ); ?> id="comment-<?php comment_ID() ?>" style="<?php if($depth>2) { $padding=($depth-1)*10; echo 'padding-left:'.$padding.'% !important';} ?>">
+    	<?php 
+            if ( $args['avatar_size'] != 0 ) {
+                echo get_avatar( $comment, '70', $default, $alt, array( 'class' => array( 'comment-avatar' ) ) ); 
+            }
+        ?>
+        <div class="comment-content s-text8">
+        	<?php printf( __( '<span class="comment-author">%s</span>' ), get_comment_author_link() ); ?>
+        	<span>
+    		<?php
+            /* translators: 1: date, 2: time */
+            printf( 
+                __('%1$s at %2$s'), 
+                get_comment_date(),  
+                get_comment_time() 
+            ); ?>
+            </span>
+            <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>">
+            </a><?php 
+            edit_comment_link( __( '(Edit)' ), '  ', '' ); ?>
+	        <?php 
+	        if ( $comment->comment_approved == '0' ) { ?>
+	            <em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.' ); ?></em><br/><?php 
+	        } ?>
+	        <p>
+        		<?php comment_text(); ?>
+	        </p>
+	        <?php 
+		        comment_reply_link( 
+		            array_merge( 
+		                $args, 
+		                array( 
+		                    'add_below' => $add_below, 
+		                    'depth'     => $depth, 
+		                    'max_depth' => $args['max_depth'] 
+		                ) 
+		            ) 
+		        ); 
+            ?>
+        </div>
+    </<?php echo $tag; ?>>
+    <?php echo $depth > 1 ? '<hr>' : '' ?>
+        <?php 
+}
 
