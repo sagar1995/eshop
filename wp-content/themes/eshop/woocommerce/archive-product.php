@@ -25,7 +25,7 @@ get_header( 'shop' );
 */
 // do_action( 'woocommerce_before_main_content' );	
 ?>
-<header class="bread-crumb bgwhite flex-w p-l-52 p-r-15 p-t-30 p-l-15-sm">
+<header class="bread-crumb">
 	<span class="s-text17">
 		<?php
 		/**

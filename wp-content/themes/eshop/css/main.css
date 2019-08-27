@@ -1841,7 +1841,7 @@ li.sale-noti > a {
   min-height: 239px;
   padding-left: 15px;
   padding-right: 15px;
-  /*margin-top: -31px;*/
+  /*margin-top: -30px;*/
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: cover;
@@ -2790,4 +2790,20 @@ h3#addinfo{
 
 #myhead{
   margin-top: 25px;
+}
+
+input.wpcf7-form-control.wpcf7-submit{
+  border-radius: 23px;
+  background-color: #222222;
+  width: 100%;
+  height: 46px;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Montserrat-Regular";
+  text-transform: uppercase;
+}
+
+.attachment-post-thumbnail {
+  width: 100% ;
+  height: 100%;
 }

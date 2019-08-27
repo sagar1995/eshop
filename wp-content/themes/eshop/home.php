@@ -81,20 +81,33 @@
 <section class="banner bgwhite p-t-40 p-b-40">
 	<div class="container">
 		<div class="row">
-			<?php
-				$sliderArgs = array(
-					'post_type' => 'banner'
-				);
-				$sliderLoop = new WP_Query( $sliderArgs );
-				if ( $sliderLoop->have_posts() ):
-			while ( $sliderLoop->have_posts() ): $sliderLoop->the_post(); ?>
-			<?php
-				$url = get_field( 'link' );
-				$category = get_field( 'category' );
-			?>
 			<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
+				<?php
+					$sliderArgs = array(
+						'post_type' => 'banner'
+					);
+					$sliderLoop = new WP_Query( $sliderArgs );
+					if ( $sliderLoop->have_posts() ){
+						while ( $sliderLoop->have_posts() ){
+				$sliderLoop->the_post(); ?>
+				<?php
+					$url = get_field( 'link' );
+					$category = get_field( 'category' );
+				?>
 				<?php if ($category=='Watches'){ ?>
 				<!-- block1 -->
+				<div class="block1 hov-img-zoom pos-relative m-b-30">
+					<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="IMG-BENNER">
+					<div class="block1-wrapbtn w-size2">
+						<!-- Button -->
+						<a href="<?php echo esc_url( $category_link ); ?>" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+							<?php the_title(); ?>
+						</a>
+					</div>
+				</div>
+				<?php } ?>
+				<!-- block1 -->
+				<?php if ($category=='Sunglasses'){ ?>
 				<div class="block1 hov-img-zoom pos-relative m-b-30">
 					<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="IMG-BENNER">
 					<div class="block1-wrapbtn w-size2">
@@ -105,23 +118,40 @@
 					</div>
 				</div>
 				<?php } ?>
-				<?php if ($category=='Watches'){ ?>
-				<!-- block1 -->
-				<div class="block1 hov-img-zoom pos-relative m-b-30">
-					<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="IMG-BENNER">
-					<div class="block1-wrapbtn w-size2">
-						<!-- Button -->
-						<a href="<?php echo $url; ?>" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-							<?php the_title(); ?>
-						</a>
-					</div>
-				</div>
-				<?php } ?>
+				<?php
+					}
+				}
+				wp_reset_query();
+				?>
 			</div>
 			
 			<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
-				<?php if ($category=='Watches'){ ?>
+				<?php
+					$sliderArgs = array(
+						'post_type' => 'banner'
+					);
+					$sliderLoop = new WP_Query( $sliderArgs );
+					if ( $sliderLoop->have_posts() ){
+						while ( $sliderLoop->have_posts() ){
+				$sliderLoop->the_post(); ?>
+				<?php
+					$url = get_field( 'link' );
+					$category = get_field( 'category' );
+				?>
+				<?php if ($category=='Bags'){ ?>
 				<!-- block1 -->
+				<div class="block1 hov-img-zoom pos-relative m-b-30">
+					<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="IMG-BENNER">
+					<div class="block1-wrapbtn w-size2">
+						<!-- Button -->
+						<a href="<?php echo esc_url( $category_link ); ?>" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+							<?php the_title(); ?>
+						</a>
+					</div>
+				</div>
+				<?php } ?>
+				<!-- block1 -->
+				<?php if ($category=='Bikes'){ ?>
 				<div class="block1 hov-img-zoom pos-relative m-b-30">
 					<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="IMG-BENNER">
 					<div class="block1-wrapbtn w-size2">
@@ -132,31 +162,43 @@
 					</div>
 				</div>
 				<?php } ?>
-				<?php if ($category=='Watches'){ ?>
-				<!-- block1 -->
-				<div class="block1 hov-img-zoom pos-relative m-b-30">
-					<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="IMG-BENNER">
-					<div class="block1-wrapbtn w-size2">
-						<!-- Button -->
-						<a href="<?php echo $url; ?>" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-							<?php the_title(); ?>
-						</a>
-					</div>
-				</div>
-				<?php } ?>
+				<?php
+					}
+				}
+				wp_reset_query();
+				?>
 			</div>
-			<?php if ($category=='Watches'){ ?>
 			<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
+				<?php
+					$sliderArgs = array(
+						'post_type' => 'banner'
+					);
+					$sliderLoop = new WP_Query( $sliderArgs );
+					if ( $sliderLoop->have_posts() ){
+						while ( $sliderLoop->have_posts() ){
+				$sliderLoop->the_post(); ?>
+				<?php
+					$url = get_field( 'link' );
+					$category = get_field( 'category' );
+				?>
+				<?php if ($category=='Dresses'){ ?>
 				<!-- block1 -->
 				<div class="block1 hov-img-zoom pos-relative m-b-30">
 					<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="IMG-BENNER">
 					<div class="block1-wrapbtn w-size2">
 						<!-- Button -->
-						<a href="<?php echo $url; ?>" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+						<a href="<?php echo esc_url( $category_link ); ?>" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
 							<?php the_title(); ?>
 						</a>
 					</div>
 				</div>
+				<?php } ?>
+				
+				<?php
+					}
+				}
+				wp_reset_query();
+				?>
 				<!-- block2 -->
 				<div class="block2 wrap-pic-w pos-relative m-b-30">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/icons/bg-01.jpg" alt="IMG">
@@ -176,12 +218,6 @@
 					</div>
 				</div>
 			</div>
-			<?php } ?>
-			<?php
-				endwhile;
-			endif;
-			wp_reset_query();
-			?>
 		</div>
 	</div>
 </section>
@@ -196,236 +232,29 @@
 		<!-- Slide2 -->
 		<div class="wrap-slick2">
 			<div class="slick2">
-				<div class="item-slick2 p-l-15 p-r-15">
-					<!-- Block2 -->
-					<div class="block2">
-						<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/item-02.jpg" alt="IMG-PRODUCT">
-							<div class="block2-overlay trans-0-4">
-								<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-									<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-									<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-								</a>
-								<div class="block2-btn-addcart w-size1 trans-0-4">
-									<!-- Button -->
-									<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-									Add to Cart
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="block2-txt p-t-20">
-							<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-								Herschel supply co 25l
-							</a>
-							<span class="block2-price m-text6 p-r-5">
-								$75.00
-							</span>
-						</div>
-					</div>
-				</div>
-				<div class="item-slick2 p-l-15 p-r-15">
-					<!-- Block2 -->
-					<div class="block2">
-						<div class="block2-img wrap-pic-w of-hidden pos-relative">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/item-03.jpg" alt="IMG-PRODUCT">
-							<div class="block2-overlay trans-0-4">
-								<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-									<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-									<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-								</a>
-								<div class="block2-btn-addcart w-size1 trans-0-4">
-									<!-- Button -->
-									<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-									Add to Cart
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="block2-txt p-t-20">
-							<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-								Denim jacket blue
-							</a>
-							<span class="block2-price m-text6 p-r-5">
-								$92.50
-							</span>
-						</div>
-					</div>
-				</div>
-				<div class="item-slick2 p-l-15 p-r-15">
-					<!-- Block2 -->
-					<div class="block2">
-						<div class="block2-img wrap-pic-w of-hidden pos-relative">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/item-05.jpg" alt="IMG-PRODUCT">
-							<div class="block2-overlay trans-0-4">
-								<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-									<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-									<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-								</a>
-								<div class="block2-btn-addcart w-size1 trans-0-4">
-									<!-- Button -->
-									<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-									Add to Cart
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="block2-txt p-t-20">
-							<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-								Coach slim easton black
-							</a>
-							<span class="block2-price m-text6 p-r-5">
-								$165.90
-							</span>
-						</div>
-					</div>
-				</div>
-				<div class="item-slick2 p-l-15 p-r-15">
-					<!-- Block2 -->
-					<div class="block2">
-						<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/item-07.jpg" alt="IMG-PRODUCT">
-							<div class="block2-overlay trans-0-4">
-								<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-									<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-									<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-								</a>
-								<div class="block2-btn-addcart w-size1 trans-0-4">
-									<!-- Button -->
-									<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-									Add to Cart
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="block2-txt p-t-20">
-							<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-								Frayed denim shorts
-							</a>
-							<span class="block2-oldprice m-text7 p-r-5">
-								$29.50
-							</span>
-							<span class="block2-newprice m-text8 p-r-5">
-								$15.90
-							</span>
-						</div>
-					</div>
-				</div>
-				<div class="item-slick2 p-l-15 p-r-15">
-					<!-- Block2 -->
-					<div class="block2">
-						<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/item-02.jpg" alt="IMG-PRODUCT">
-							<div class="block2-overlay trans-0-4">
-								<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-									<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-									<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-								</a>
-								<div class="block2-btn-addcart w-size1 trans-0-4">
-									<!-- Button -->
-									<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-									Add to Cart
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="block2-txt p-t-20">
-							<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-								Herschel supply co 25l
-							</a>
-							<span class="block2-price m-text6 p-r-5">
-								$75.00
-							</span>
-						</div>
-					</div>
-				</div>
-				<div class="item-slick2 p-l-15 p-r-15">
-					<!-- Block2 -->
-					<div class="block2">
-						<div class="block2-img wrap-pic-w of-hidden pos-relative">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/item-03.jpg" alt="IMG-PRODUCT">
-							<div class="block2-overlay trans-0-4">
-								<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-									<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-									<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-								</a>
-								<div class="block2-btn-addcart w-size1 trans-0-4">
-									<!-- Button -->
-									<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-									Add to Cart
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="block2-txt p-t-20">
-							<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-								Denim jacket blue
-							</a>
-							<span class="block2-price m-text6 p-r-5">
-								$92.50
-							</span>
-						</div>
-					</div>
-				</div>
-				<div class="item-slick2 p-l-15 p-r-15">
-					<!-- Block2 -->
-					<div class="block2">
-						<div class="block2-img wrap-pic-w of-hidden pos-relative">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/item-05.jpg" alt="IMG-PRODUCT">
-							<div class="block2-overlay trans-0-4">
-								<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-									<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-									<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-								</a>
-								<div class="block2-btn-addcart w-size1 trans-0-4">
-									<!-- Button -->
-									<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-									Add to Cart
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="block2-txt p-t-20">
-							<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-								Coach slim easton black
-							</a>
-							<span class="block2-price m-text6 p-r-5">
-								$165.90
-							</span>
-						</div>
-					</div>
-				</div>
-				<div class="item-slick2 p-l-15 p-r-15">
-					<!-- Block2 -->
-					<div class="block2">
-						<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/item-07.jpg" alt="IMG-PRODUCT">
-							<div class="block2-overlay trans-0-4">
-								<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-									<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-									<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-								</a>
-								<div class="block2-btn-addcart w-size1 trans-0-4">
-									<!-- Button -->
-									<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-									Add to Cart
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="block2-txt p-t-20">
-							<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-								Frayed denim shorts
-							</a>
-							<span class="block2-oldprice m-text7 p-r-5">
-								$29.50
-							</span>
-							<span class="block2-newprice m-text8 p-r-5">
-								$15.90
-							</span>
-						</div>
-					</div>
-				</div>
+				<?php
+					$args = array(
+					'post_type' => 'product',
+					'posts_per_page' => 12,
+					'tax_query' => array(
+					array(
+					'taxonomy' => 'product_visibility',
+					'field'    => 'name',
+					'terms'    => 'featured',
+					),
+					),
+					);
+					$loop = new WP_Query( $args );
+					if ( $loop->have_posts() ) {
+					while ( $loop->have_posts() ) : $loop->the_post();
+					wc_get_template_part( 'content', 'product' );
+					endwhile;
+					} else {
+					echo __( 'No products found' );
+					}
+					wp_reset_postdata();
+				?>
+				
 			</div>
 		</div>
 	</div>

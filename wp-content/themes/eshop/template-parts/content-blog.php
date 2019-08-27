@@ -79,26 +79,7 @@
 			?>
 			
 		</ul>
-		<!-- Featured Products -->
-		<h4 class="m-text23 p-t-65 p-b-34">
-		Featured Products
-		</h4>
-		<ul class="bgwhite">
-			<li class="flex-w p-b-20">
-				<a href="product-detail.html" class="dis-block wrap-pic-w w-size22 m-r-20 trans-0-4 hov4">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/item-16.jpg" alt="IMG-PRODUCT">
-				</a>
-				<div class="w-size23 p-t-5">
-					<a href="product-detail.html" class="s-text20">
-						White Shirt With Pleat Detail Back
-					</a>
-					<span class="dis-block s-text17 p-t-6">
-						$19.00
-					</span>
-				</div>
-			</li>
-		</ul>
-		<!-- Archive -->
+		
 		<h4 class="m-text23 p-t-50 p-b-16">
 		Archive
 		</h4>

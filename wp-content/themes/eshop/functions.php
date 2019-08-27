@@ -139,8 +139,13 @@ function eshop_scripts() {
 	wp_enqueue_script('eshop-js-lightbox', get_template_directory_uri() . '/vendor/lightbox2/js/lightbox.min.js', array('jquery'), '1.0.0', true);
 	wp_enqueue_script('eshop-js-sweetalert', get_template_directory_uri() . '/vendor/sweetalert/sweetalert.min.js', array('jquery'), '1.0.0', true);
 	// wp_enqueue_script('eshop-js-nouislider', get_template_directory_uri() . '/vendor/noui/nouislider.min.js', array('jquery'), '1.0.0', true);
+	
 	wp_enqueue_script('eshop-js-main', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0.0', true);
 	
+	wp_enqueue_script('eshop-js-map', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes', array('jquery'), '1.0.0', true);
+
+	wp_enqueue_script('eshop-js-map-custom', get_template_directory_uri() . '/js/map-custom.js', array('jquery'), '1.0.0', true);
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

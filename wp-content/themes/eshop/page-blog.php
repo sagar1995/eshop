@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <!-- Title Page -->
-<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/heading-pages-05.jpg);">
+<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/header.jpg);">
 	<h2 class="l-text2 t-center">
 	Blog
 	</h2>
