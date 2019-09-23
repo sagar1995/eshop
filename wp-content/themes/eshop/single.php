@@ -1,6 +1,5 @@
 <?php
 	get_header();
-	get_header();
 	while ( have_posts() ) :
 	the_post();
 	$image = get_the_post_thumbnail_url();
